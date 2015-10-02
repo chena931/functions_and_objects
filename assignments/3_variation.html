@@ -20,7 +20,7 @@
 	function draw() {
     //this line will call your function and pass it a color
     //feel free to change the color
-			drawTarget("#FF0000");
+			drawTarget("#6699FF");
 	
   }
 
@@ -28,7 +28,12 @@
 
   function drawTarget(targetColor){
 
-
+      background("white");
+      fill(targetColor);
+      ellipse(mouseX,mouseY,200,200);
+      ellipse(mouseX,mouseY,150,150);
+      ellipse(mouseX,mouseY,100,100);
+      ellipse(mouseX,mouseY,50,50);
 
   }
 

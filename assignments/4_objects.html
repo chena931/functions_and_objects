@@ -21,7 +21,7 @@
 	function draw() {
       //create the object and initialize it 
       //with a color (feel free to change the color)
-      var myTarget = new Target("#FF0000");
+      var myTarget = new Target("#99FF66");
 
       //Then call the drawTarget method to draw the object
 			myTarget.drawTarget();
@@ -35,9 +35,15 @@
   //and a drawTarget method
 
   function Target(targetColor){
+    
+    this.drawTarget=function(){
 
-
-
+      fill(targetColor);
+      ellipse(300,300,200,200);
+      ellipse(300,300,150,150);
+      ellipse(300,300,100,100);
+      ellipse(300,300,50,50);
+    }
   }
 
 
