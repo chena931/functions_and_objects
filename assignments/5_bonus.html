@@ -15,20 +15,22 @@
   function draw() {
 
   
-      drawTarget("#FFCC66");
+      drawTarget();
   
   }
 
 
 
-  function drawTarget(targetColor){
-    fill(targetColor);
-    strokeWeight(1);
+  function drawTarget(){
+    
+    
+
       
       for(var x = 0; x < 3; x ++){
 
-      
-      rect(mouseX+ x*30, mouseY,20,20);
+      stroke(random(0,100),random(0,100),150);
+      strokeWeight(5);
+      line(mouseX+ x, mouseY*random(0,100), mouseX + x*100, mouseY*random(0,100));
     }
     
   }
